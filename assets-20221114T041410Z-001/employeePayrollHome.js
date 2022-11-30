@@ -36,3 +36,28 @@ const createInnerHtml = () => {
   }
   document.querySelector("#table-display").innerHTML = innerHtml;
 };
+const createEmployeePayrollJson = () => {
+  let empPayrollListLocal = [
+    {
+      _name: "Shubham Mishra",
+      _gender: "male",
+      _department: ["Engineering", "Finance"],
+      _salary: "500000",
+      _startDate: "29 0ct 2019",
+      _note: "",
+      _id: new Date().getTime(),
+      _profilePic: "/profile-images/Ellipse -2.png",
+    },
+    {
+      _name: "Second name",
+      _gender: "Female",
+      _department: ["Engineering", "Finance"],
+      _salary: "400000",
+      _startDate: "29 0ct 2019",
+      _note: "",
+      _id: new Date().getTime() + 1,
+      _profilePic: "/profile-images/Ellipse -1.png",
+    },
+  ];
+  return empPayrollListLocal;
+};
